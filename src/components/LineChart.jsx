@@ -11,7 +11,7 @@ ChartJS.register(
 function LineChart({items}) {
  
   
-  // const [data,setData]= useState({null});
+  
   const labels=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday"]
   const dataLow=[23,25,21,23,29,22,31]
   const dataHigh=[32,35,33,30,38,31,40]
@@ -72,9 +72,7 @@ function LineChart({items}) {
             pointBorderColor:"black"
           }
         ]})
-      console.log(chartLabel);
-      console.log(dataSet1);
-      console.log(dataSet2);
+      
     },[])
     useEffect(()=>{
       const chartLabel=[]
@@ -108,13 +106,11 @@ function LineChart({items}) {
             pointBorderColor:"black"
           }
         ]})
-      console.log(chartLabel);
-      console.log(dataSet1);
-      console.log(dataSet2);
+      
     },items)
-  //const {...items}=item;
+
   return (
-    //<h1>hello</h1>
+   
     
     <div className='bg-white'>
       <div className=' flex items-center justify-start mt-6'>
